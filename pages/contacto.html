@@ -12,62 +12,178 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
+
 <body>
-    <section class="grid-container">
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- MOBILE: NAVBAR -->
+<nav class="navbar d-md-none">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://placehold.co/200x60" class="img-fluid" alt="Logo"></a>
 
-        <!-- SIDEBAR  -->
-        <header>
+        <!-- iCONO DE HAMBURGUESA -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- LOGO, NOMBRE Y DESCRIPCIÓN -->
-            <section class="header-arriba"> 
-                <img src="https://placehold.co/200x60" alt="Logo">
+    </div>
 
-                <h1>Diseñador grafico (Nombre) </h1>   
-                <p class="header-p"> ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus? Mollitia iusto, praesentium cumque quo tempore facere dignissimos laborum nobis perferendis libero placeat iste ad quasi. Vel ducimus reiciendis deleniti.
-                </p>    
+    <!-- LINK DE HAMBURGUESA -->
+    <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobremi.html">Sobre Mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link active-link" href="#">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- MOBILE: LOGO + TITULO + DESCRIPCIÓN -->
+<section class="mobile-header d-block d-md-none">
+    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+    <p class="sidebar-descripcion">
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+    </p>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE SIDEBAR ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- ↓↓↓↓↓↓↓↓↓↓ DESKTOP ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- SIDEBAR DESKTOP + MAIN -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-md-3 d-none d-md-flex flex-column sidebar">
+
+            <!-- SIDEBAR HEADER -->
+            <section class="px-3">
+                <img src="https://placehold.co/200x60" class="sidebar-logo img-fluid" alt="Logo">
+                <div class="container-titulos">
+                    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+                    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+                </div>
+                <p class="sidebar-descripcion">
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                </p>
             </section>
-            
-            <!-- NAVEGACIÓN -->
-            <nav>
-                <ul>
-                    <li><a class="a-nav" href="../index.html">Trabajos</a></li>
-                    <li><a class="a-nav" href="./sobremi.html">Sobre Mi</a></li> 
-                    <li><a class="a-nav" href="./servicios.html">Servicios</a></li>
-                    <li><a class="a-nav-active"href="#">Contacto</a></li> 
+
+            <!-- NAV DESKTOP -->
+            <nav class="navbar-desktop">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobremi.html">Sobre Mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="#">Contacto</a></li>
                 </ul>
             </nav>
-             
-            <!-- FOOTER  -->
-            <footer>
-                <hr><br>
-                <p class="footer-p">Diseñado y creado por Nombre</p>
-                <p class="footer-p">2025</p>
+
+            <!-- FOOTER -->
+            <footer class="mt-auto">
+                <hr>
+                <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
             </footer>
-        </header>
-    
-        <!-- MAIN  -->
-        <main>
-            <!-- Main con contenido de Contacto -->
-         
-            <h2>Contacto</h2>
 
-            <p>ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus? Mollitia iusto, praesentium cumque quo tempore facere dignissimos laborum nobis perferendis libero placeat iste ad quasi. Vel ducimus reiciendis deleniti.</p>
+        </aside>
 
-            <h3>OFICINA 1</h3>
-            <ul>
-                <li>Calle Falsa 123</li>
-                <li>Argentina, Buenos Aires</li>
-                <li>15 1234 5678</li>
-                <li>Mail@dominio.com</li>
-            </ul>
-            <img src="https://placehold.co/600x400" alt="Imagen de contacto">
+        <!-- MAIN -->
+        <main class="col-12 col-md-9">
 
-        </main>   
+            <!-- TITULO-->
+            <h2 class="main-titulo">Contactacnos</h2>
 
-    </section>
+            <!-- TEXTO QUE CONTINUA EN TODA LA FILA -->
+            <div class="contacto-texto-full">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt et quo, mollitia, aspernatur cumque necessitatibus ex quod nemo debitis sint facilis? Cumque fugit molestiae nobis ullam doloremque excepturi repudiandae? Atque.</p>
 
-    <!-- BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad ut similique quis eveniet illo id error aut ex, excepturi, explicabo consequuntur illum nostrum veritatis ipsam eius expedita distinctio rem.</p>
+            </div>
+
+            <!-- FOTO MAPA 2 COLUMNAS -->
+            <div class="mapa-container">
+                <div class="row mapaytexto-container">
+                    
+                    <div class="col-12 col-md-5 mapa-texto">
+                        <h3 class="mapa-titulo">OFICINA 1</h3>
+                        <ul class="list-group list-group-flush mapa-lista">
+                            <li class="list-group-item">Calle Falsa 123</li>
+                            <li class="list-group-item">Argentina, Buenos Aires</li>
+                            <li class="list-group-item">1414</li>
+                            <li class="list-group-item">15 1234 5678</li>
+                            <li class="list-group-item">Mail@dominio.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-7">
+                        <img src="https://placehold.co/500x250" alt="Foto mapa" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="main-separador">
+
+            <!-- TITULO-->
+            <h2 class="main-titulo">¡DI HOLA!</h2>
+
+            <!-- TEXTO QUE CONTINUA EN TODA LA FILA -->
+            <div class="contacto-texto-full">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt et quo, mollitia, aspernatur cumque necessitatibus ex quod nemo debitis sint facilis? Cumque fugit molestiae nobis ullam doloremque excepturi repudiandae? Atque.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad ut similique quis eveniet illo id error aut ex, excepturi, explicabo consequuntur illum nostrum veritatis ipsam eius expedita distinctio rem.</p>
+            </div>
+
+            <!-- FORM DE CONTACTO -->
+            <form class="row g-3">
+
+                <!-- FORMULARIO -->
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="Juan Perez">
+                        <label for="floatingInput">Nombre completo</label>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="email@dominio.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deja tu mensaje aca" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                </div>
+
+                <!-- BOTON ENVIAR -->
+                <div class="col-12 boton-vermas-container">
+                  <button type="submit" class="btn btn-primary boton-vermas">Enviar</button>
+                </div>
+            </form>
+
+        </main>
+    </div>
+</div>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL DESKTOP ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<section class="mobile-footer d-block d-md-none">
+    <footer class="mt-auto">
+        <hr>
+        <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
+    </footer>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE FOOTER ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- BOOTSTRAP JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

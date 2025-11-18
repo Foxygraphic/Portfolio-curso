@@ -193,7 +193,27 @@ img {
     color: #3f3f3f;
 }
 
+/* ------ CONTACTO MAIN ------ */
+.contacto-texto-full {
+    margin-top: 1rem;
+    margin-bottom: 80px;
+    text-align: center;
+}
 
+.mapaytexto-container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.mapa-lista {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #ff0660 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 6, 96, 0.25) !important;
+}
 
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
