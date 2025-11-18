@@ -12,59 +12,162 @@
 </head>
 
 <body>
-    <section class="grid-container">
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- MOBILE: NAVBAR -->
+<nav class="navbar d-md-none">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://placehold.co/200x60" class="img-fluid" alt="Logo"></a>
 
-        <!-- SIDEBAR  -->
-        <header>
+        <!-- iCONO DE HAMBURGUESA -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- LOGO, NOMBRE Y DESCRIPCIÓN -->
-            <section class="header-arriba"> 
-                <img src="https://placehold.co/200x60" alt="Logo">
+    </div>
 
-                <h1>Diseñador grafico (Nombre) </h1>   
-                <p class="header-p"> ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus? Mollitia iusto, praesentium cumque quo tempore facere dignissimos laborum nobis perferendis libero placeat iste ad quasi. Vel ducimus reiciendis deleniti.
-                </p>    
+    <!-- LINK DE HAMBURGUESA -->
+    <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobremi.html">Sobre Mi</a></li>
+            <li class="nav-item"><a class="nav-link active-link" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- MOBILE: LOGO + TITULO + DESCRIPCIÓN -->
+<section class="mobile-header d-block d-md-none">
+    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+    <p class="sidebar-descripcion">
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+    </p>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE SIDEBAR ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- ↓↓↓↓↓↓↓↓↓↓ DESKTOP ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- SIDEBAR DESKTOP + MAIN -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-md-3 d-none d-md-flex flex-column sidebar">
+
+            <!-- SIDEBAR HEADER -->
+            <section class="px-3">
+                <img src="https://placehold.co/200x60" class="sidebar-logo img-fluid" alt="Logo">
+                <div class="container-titulos">
+                    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+                    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+                </div>
+                <p class="sidebar-descripcion">
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                </p>
             </section>
-            
-            <!-- NAVEGACIÓN -->
-            <nav>
-                <ul>
-                    <li><a class="a-nav" href="../index.html">Trabajos</a></li>
-                    <li><a class="a-nav" href="./sobremi.html">Sobre Mi</a></li> 
-                    <li><a class="a-nav-active" href="#">Servicios</a></li>
-                    <li><a class="a-nav" href="./contacto.html">Contacto</a></li> 
+
+            <!-- NAV DESKTOP -->
+            <nav class="navbar-desktop">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobremi.html">Sobre Mi</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-             
-            <!-- FOOTER  -->
-            <footer>
-                <hr><br>
-                <p class="footer-p">Diseñado y creado por Nombre</p>
-                <p class="footer-p">2025</p>
+
+            <!-- FOOTER -->
+            <footer class="mt-auto">
+                <hr>
+                <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
             </footer>
-        </header>
 
-        <!-- MAIN  -->
-        <main>
-            <!-- Main con contenido de Servicios -->
+        </aside>
 
-            <h2>Servicios</h2>
+        <!-- MAIN -->
+        <main class="col-12 col-md-9">
 
-            <img src="https://placehold.co/600x400" alt="Imagen de servicios">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- TITULO-->
+            <h2 class="main-titulo">Servicios</h2>
 
-            <img src="https://placehold.co/600x400" alt="Imagen de servicios">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- SERVICIO 1 IMAGEN + TEXTO -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 main-container">
+                <div class="main-imagen">
+                    <img src="https://placehold.co/500x300" class="img-fluid" alt="Servicio 1">
+                </div>
 
-            <img src="https://placehold.co/600x400" alt="Imagen de servicios">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="main-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique eos neque eveniet reiciendis corporis iure vero possimus. Quod suscipit soluta ea quidem, ex ab ipsum rerum nam corporis eaque!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil, temporibus consectetur placeat ipsam ut explicabo dolore vitae esse reprehenderit repellat.</p>
+                </div>
+            </div>
+
+            <hr class="main-separador">
+
+            <!-- SERVICIO 2 IMAGEN + TEXTO -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 main-container">
+                <div class="main-imagen">
+                    <img src="https://placehold.co/500x300" class="img-fluid" alt="Servicio 2">
+                </div>
+
+                <div class="main-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique eos neque eveniet reiciendis corporis iure vero possimus. Quod suscipit soluta ea quidem, ex ab ipsum rerum nam corporis eaque!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil, temporibus consectetur placeat ipsam ut explicabo dolore vitae esse reprehenderit repellat.</p>
+                </div>
+            </div>
+
+            <hr class="main-separador">
+
+            <!-- SERVICIO 3 IMAGEN + TEXTO -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 main-container">
+                <div class="main-imagen">
+                    <img src="https://placehold.co/500x300" class="img-fluid" alt="Servicio 3">
+                </div>
+
+                <div class="main-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique eos neque eveniet reiciendis corporis iure vero possimus. Quod suscipit soluta ea quidem, ex ab ipsum rerum nam corporis eaque!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil, temporibus consectetur placeat ipsam ut explicabo dolore vitae esse reprehenderit repellat.</p>
+                </div>
+            </div>
 
         </main>
 
-    </section>
-    
-    <!-- BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+    </div>
+
+</div>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL DESKTOP ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<section class="mobile-footer d-block d-md-none">
+    <footer class="mt-auto">
+        <hr>
+        <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
+    </footer>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE FOOTER ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- BOOTSTRAP JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
