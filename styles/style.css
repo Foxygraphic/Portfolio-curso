@@ -22,10 +22,20 @@ body {
     padding: 35px 20px;    
 }
 
+.container-titulos {
+    text-align: center;
+}
+
+.sidebar-logo {
+    margin-bottom: 20px;
+}
+
 .sidebar-titulo {
     color: #3f3f3f;
     font-size: 36px;
     margin-bottom: 5px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .sidebar-subtitulo {
@@ -40,8 +50,10 @@ body {
 }
 
 .mobile-header {
-    background-color: #f9f9f9
-    align-items: center;
+    background-color: #f9f9f9;
+    display: flex;
+    padding: 30px 0px;
+    text-align: center;
 }
 
 
@@ -84,17 +96,38 @@ body {
 
 
 
+/* ------ INDEX MAIN ------ */
+.main-proyectos {
+    padding-top: 30px;
+}
+.proyectos  {
+    row-gap: 30px;
+}
 
-/* ------ BOTÓN VER MÁS ------ */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.boton-vermas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .boton-vermas {
     text-decoration: none;
     background-color: transparent;
     color: #494949;
     padding: 15px 60px;
+    margin: 30px 0px;
     border: 2px solid #494949;
     border-radius: 40px;
     font-weight: 600;
     display: inline-block;
+
 }
 
 .boton-vermas:hover {
@@ -103,11 +136,104 @@ body {
     border-color: #ff0660;
 }
 
+/* ------ SOBREMI MAIN ------ */
+.sobremi-titulo {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: #3f3f3f;
+}
 
+.sobremi-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
-/* ------ IMÁGENES DE PROYECTOS ------ */
-img {
-    width: 100%;
+.sobremi-imagen {
+    flex: 0 0 40%;
+    min-width: 40%;
+}
+
+.sobremi-imagen img {
+    border-radius: 8px;
+}
+
+.sobremi-texto {
+    flex: 1;
+}
+
+.sobremi-texto-full {
+    margin-top: 1rem;
+    padding-bottom: 60px;
+}
+
+.integrantes-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.integrantes-container img {
     height: auto;
-    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.integrantes-containers h4 {
+    margin-top: 10px;
+    color: #3f3f3f;
+}
+
+/* ------ SERVICIOS MAIN ------ */
+
+
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/* ---- MEDIA QUERIES ---- */
+@media (min-width: 768px) and (max-width: 950px){
+
+    /* ---- SIDEBAR ---- */
+    .sidebar-descripcion  {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+
+    /* ---- SIDEBAR ---- */
+    .sidebar-titulo {
+        font-size: 40px;
+        margin-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .sidebar-subtitulo {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-descripcion {
+        font-size: 14px;
+    }
+
+    /* ---- SOBREMI MAIN ---- */
+    .sobremi-container {
+        flex-direction: column;
+    }
+
+    .integrantes-titulo {
+        font-size: 50px;
+    }
+
+    .sobremi-image, .sobremi-image img {
+        max-width: 100%;
+    }
+
+    .integrantes-container img {
+        padding-bottom: 80px;
+    }
 }

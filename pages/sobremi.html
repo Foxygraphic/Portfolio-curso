@@ -1,87 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
 
-    <!-- BOOTSTRAP CSS-->
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
-
 </head>
+
+
 <body>
-    <section class="grid-container">
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- MOBILE: NAVBAR -->
+<nav class="navbar d-md-none">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://placehold.co/200x60" class="img-fluid" alt="Logo"></a>
 
-        <!-- SIDEBAR  -->
-        <header>
+        <!-- iCONO DE HAMBURGUESA -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- LOGO, NOMBRE Y DESCRIPCIÓN -->
-            <section class="header-arriba"> 
-                <img src="https://placehold.co/200x60" alt="Logo">
+    </div>
 
-                <h1>Diseñador grafico (Nombre) </h1>   
-                <p class="header-p"> ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus? Mollitia iusto, praesentium cumque quo tempore facere dignissimos laborum nobis perferendis libero placeat iste ad quasi. Vel ducimus reiciendis deleniti.
-                </p>    
+    <!-- LINK DE HAMBURGUESA -->
+    <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+            <li class="nav-item"><a class="nav-link active-link" href="#">Sobre Mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- MOBILE: LOGO + TITULO + DESCRIPCIÓN -->
+<section class="mobile-header d-block d-md-none">
+    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+    <p class="sidebar-descripcion">
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+    </p>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE SIDEBAR ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- ↓↓↓↓↓↓↓↓↓↓ DESKTOP ↓↓↓↓↓↓↓↓↓↓ -->
+<!-- SIDEBAR DESKTOP + MAIN -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-md-3 d-none d-md-flex flex-column sidebar">
+
+            <!-- SIDEBAR HEADER -->
+            <section class="px-3">
+                <img src="https://placehold.co/200x60" class="sidebar-logo img-fluid" alt="Logo">
+                <div class="container-titulos">
+                    <h1 class="sidebar-titulo">Victoria Ayos</h1>
+                    <h5 class="sidebar-subtitulo text-muted">Diseñadora gráfica</h5>
+                </div>
+                <p class="sidebar-descripcion">
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione repellendus mollitia praesentium cumque.
+                </p>
             </section>
-            
-            <!-- NAVEGACIÓN -->
-            <nav>
-                <ul>
-                    <li><a class="a-nav" href="../index.html">Trabajos</a></li>
-                    <li><a class="a-nav-active" href="#">Sobre Mi</a></li> 
-                    <li><a class="a-nav" href="./servicios.html">Servicios</a></li>
-                    <li><a class="a-nav" href="./contacto.html">Contacto</a></li> 
+
+            <!-- NAV DESKTOP -->
+            <nav class="navbar-desktop">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trabajos</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="#">Sobre Mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-             
-            <!-- FOOTER  -->
-            <footer>
-                <hr><br>
-                <p class="footer-p">Diseñado y creado por Nombre</p>
-                <p class="footer-p">2025</p>
+
+            <!-- FOOTER -->
+            <footer class="mt-auto">
+                <hr>
+                <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
             </footer>
-        </header>
-    
-        <!-- MAIN  -->
-        <main>
-            <!-- Main con contenido Sobre Mi -->
-            <section class="grid-sobremi"></section>
-                <h2>Sobre Mi</h2>
 
-                <img src="https://placehold.co/500x400" alt="Imagen de diseñador">
+        </aside>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- MAIN -->
+        <main class="col-12 col-md-9">
 
-                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt et quo, mollitia, aspernatur cumque necessitatibus ex quod nemo debitis sint facilis? Cumque fugit molestiae nobis ullam doloremque excepturi repudiandae? Atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dignissimos eum perspiciatis sint fugit quam maiores harum! Suscipit ut, ipsa officia animi in hic harum ab sint earum quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad ut similique quis eveniet illo id error aut ex, excepturi, explicabo consequuntur illum nostrum veritatis ipsam eius expedita distinctio rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur quas doloribus magni ipsa repellat ipsam, debitis nihil nesciunt quibusdam quo odit nemo, earum totam, fuga ducimus quos enim autem.</p>
+            <!-- TITULO-->
+            <h2 class="sobremi-titulo">Sobre Mi</h2>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt et quo, mollitia, aspernatur cumque necessitatibus ex quod nemo debitis sint facilis? Cumque fugit molestiae nobis ullam doloremque excepturi repudiandae? Atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dignissimos eum perspiciatis sint fugit quam maiores harum! Suscipit ut, ipsa officia animi in hic harum ab sint earum quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad ut similique quis eveniet illo id error aut ex, excepturi, explicabo consequuntur illum nostrum veritatis ipsam eius expedita distinctio rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur quas doloribus magni ipsa repellat ipsam, debitis nihil nesciunt quibusdam quo odit nemo, earum totam, fuga ducimus quos enim autem.</p>
+            <!-- IMAGEN + TEXTO -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 sobremi-container">
+                <div class="sobremi-imagen">
+                    <img src="https://placehold.co/500x300" class="img-fluid" alt="Imagen personal">
+                </div>
 
-                <p>
-                    <h3>Nombre</h5> 
-                     Puesto de trabajo
-                 </p>
-                <p><img src="https://placehold.co/300x400" alt="Foto de perfil"></p>
+                <div class="sobremi-texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                <p>
-                    <h3>Nombre</h5> 
-                     Puesto de trabajo
-                </p>
-                <p><img src="https://placehold.co/300x400" alt="Foto de perfil"></p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <p>
-                    <h3>Nombre</h5> 
-                    Puesto de trabajo
-                </p>
-                <p><img src="https://placehold.co/300x400" alt="Foto de perfil"></p>
-            </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique eos neque eveniet reiciendis corporis iure vero possimus. Quod suscipit soluta ea quidem, ex ab ipsum rerum nam corporis eaque!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nihil, temporibus consectetur placeat ipsam ut explicabo dolore vitae esse reprehenderit repellat.</p>
+                </div>
+            </div>
+
+            <!-- TEXTO QUE CONTINUA EN TODA LA FILA -->
+            <div class="sobremi-texto-full">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt et quo, mollitia, aspernatur cumque necessitatibus ex quod nemo debitis sint facilis? Cumque fugit molestiae nobis ullam doloremque excepturi repudiandae? Atque.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ad ut similique quis eveniet illo id error aut ex, excepturi, explicabo consequuntur illum nostrum veritatis ipsam eius expedita distinctio rem.</p>
+            </div>
+
+            <!-- 3 COLUMNAS -->
+            <div class="row row-cols-3 row-cols-sm-1 row-cols-md-3 integrantes-container">
+                <div class="col-12 col-md-4 mb-4">
+                    <h4 class="integrantes-titulo">Ayudante 1</h4>
+                    <img src="https://placehold.co/200x200" alt="Icono 1" class="img-fluid mb-2">
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h4 class="integrantes-titulo">Ayudante 2</h4>
+                    <img src="https://placehold.co/200x200" alt="Icono 2" class="img-fluid mb-2">                    
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <h4 class="integrantes-titulo">Ayudante 3</h4>
+                    <img src="https://placehold.co/200x200" alt="Icono 3" class="img-fluid mb-2">
+                </div>
+            </div>
+
         </main>
+    </div>
+</div>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL DESKTOP ↑↑↑↑↑↑↑↑↑↑ -->
 
-    </section>
 
-    <!-- BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+<!-- ↓↓↓↓↓↓↓↓↓↓ MOBILE SIDEBAR ↓↓↓↓↓↓↓↓↓↓ -->
+<section class="mobile-footer d-block d-md-none">
+    <footer class="mt-auto">
+        <hr>
+        <p class="footer-texto">Diseñado por Victoria Ayos<br>2025</p>
+    </footer>
+</section>
+<!-- ↑↑↑↑↑↑↑↑↑↑ FINAL MOBILE FOOTER ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+<!-- BOOTSTRAP JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
