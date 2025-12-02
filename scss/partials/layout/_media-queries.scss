@@ -1,0 +1,52 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// MEDIA QUERIES
+
+//TABLETS
+@media (min-width: 768px) and (max-width: 950px) {
+   
+    // SIDEBAR
+    .sidebar-descripcion  {
+        font-size: 14px;
+    }
+} 
+
+// MOBILE
+@media (max-width: 767px) {/
+    
+    // SIDEBAR
+    .sidebar-titulo {
+        font-size: 40px;
+        margin-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .sidebar-subtitulo {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-descripcion {
+        font-size: 14px;
+    }
+    
+        
+    // MAIN
+    .main-image, .main-image img { // Atención: Usarás .main-image aquí
+        max-width: 100%;
+    }
+
+    .main-container {
+        @include mix.flex(column, initial, initial); // Forzamos la columna
+    }
+    
+    // SOBRE MI
+    .integrantes-titulo {
+        font-size: 50px;
+    }
+
+    .integrantes-container img {
+        padding-bottom: 80px;
+    }
+}

@@ -1,0 +1,20 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// FORM 
+.form-control {
+    border-radius: 8px; 
+    border: 1px solid #cccccc; 
+    padding: 10px 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &::placeholder {
+        color: variables.$color-texto-secundario;
+        opacity: 0.8;
+    }
+
+    &:focus {
+        border-color: variables.$color-primario !important; 
+        box-shadow: 0 0 0 0.2rem rgba(255, 6, 96, 0.25) !important;
+    }
+}

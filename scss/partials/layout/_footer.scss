@@ -1,0 +1,14 @@
+@use "../utilities/variables";
+
+// FOOTER
+.footer-texto {
+    color: variables.$color-texto-secundario;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+// FOOTER MOBILE
+.mobile-footer {
+    text-align: center;
+    padding: 10px 10px;
+}

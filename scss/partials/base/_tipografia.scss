@@ -1,0 +1,11 @@
+@use "../utilities/variables";
+
+// TIPOGRAFIA ENRUTADA
+@import url("https://use.typekit.net/kaz3vre.css");
+
+// BODY
+body {
+    font-family: variables.$font-stack;
+    color: variables.$color-texto-principal;
+}
+

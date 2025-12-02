@@ -1,0 +1,84 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// MAIN
+.main-titulo {
+    text-align: center;
+    color: variables.$color-texto-resaltado;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.main-container {
+    @include mixins.flex(row, flex-start, center);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-image {
+    flex: 0 0 40%;
+    min-width: 40%;
+
+    img {
+        border-radius: 8px;
+      }
+}
+
+.main-text {
+    flex: 1;    
+}
+
+.main-separador {
+    border: solid 0.5px variables.$color-items-suave;
+    margin: 60px 0;
+}
+
+/////////// INDEX MAIN
+.main-proyectos {
+    padding-top: 30px;
+}
+
+.proyectos {
+    row-gap: 30px;
+}
+
+/////////// SOBRE MI MAIN
+.sobremi-texto-full { 
+    margin-top: 1rem;
+    padding-bottom: 60px;
+}
+
+.integrantes-container {
+    margin-top: 50px;
+    text-align: center;
+
+    img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    h4 {
+        color: variables.$color-texto-resaltado;
+        margin-top: 10px;        
+    }
+}
+
+/////////// CONTACTO MAIN
+.contacto-texto-full {
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 80px;
+}
+
+.mapaytexto-container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    .mapa-lista {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+}

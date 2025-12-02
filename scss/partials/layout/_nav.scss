@@ -1,0 +1,24 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// NAVBAR DEL SIDEBAR
+
+// NAV DESKTOP
+.navbar-desktop {
+    @include mixins.flex(column, space-between, flex-start);
+    padding-top: 30px;
+}
+
+// NAV LINKS
+.nav-links {
+    text-decoration: none;
+    color: variables.$color-fondo-principal;
+    font-weight: 600;
+    &:hover {
+            color: variables.$color-texto-resaltado;
+        }
+    &.active-link {
+        color: variables.$color-primario;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,19 @@
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// UTILITIES
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixins";
+
+// LAYOUT
+@use "./partials/layout/sidebar";
+@use "./partials/layout/nav";
+@use "./partials/layout/main";
+@use "./partials/layout/footer";
+@use "./partials/layout/media-queries";
+
+// COMPONENTS
+@use "./partials/components/buttons";
+@use "./partials/components/forms";
+@use "./partials/components/media";

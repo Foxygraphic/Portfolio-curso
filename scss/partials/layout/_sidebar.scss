@@ -1,0 +1,38 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// SIDEBAR HEADER
+.sidebar {
+    @include mixins.flex(column, flex-start, stretch);
+    background-color: variables.$color-fondo-secundario;
+    min-height: 100vh;
+    padding: 35px 20px;
+
+    .container-titulos {
+        text-align: center ;
+    }
+    .sidebar-logo {
+        margin-bottom:  20px;
+    }
+    .sidebar-titulo {
+        font-family: variables.$font-stack;
+        color: variables.$color-texto-resaltado;
+        text-align: center;
+        font-size: 36px;     
+        margin-bottom: 5px;
+        margin-top: 15 px;
+    }
+    .sidebar-subtitulo {
+        font-family: variables.$font-stack;
+        color: variables.$color-texto-principal;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    .sidebar-descripcion {
+        font-family: variables.$font-stack;
+        color: variables.$color-texto-principal;
+        font-size: 16px;
+
+    }
+
+}
