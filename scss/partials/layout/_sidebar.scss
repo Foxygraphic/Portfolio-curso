@@ -14,26 +14,27 @@
     .sidebar-logo {
         display: block; 
         margin: 0 auto 20px auto;
-        margin-bottom:  20px;
+        margin-bottom:  50px;
     }
     .sidebar-titulo {
         font-family: variables.$font-stack;
         color: variables.$color-texto-resaltado;
         text-align: center;
-        font-size: 36px;     
+        font-size: 27px;     
         margin-bottom: 5px;
         margin-top: 15px;
     }
     .sidebar-subtitulo {
         font-family: variables.$font-stack;
         color: variables.$color-texto-principal;
+        font-size: 17px;
         font-style: italic;
         margin-bottom: 20px;
     }
     .sidebar-descripcion {
         font-family: variables.$font-stack;
         color: variables.$color-texto-principal;
-        font-size: 16px;
+        font-size: 15px;
 
     }
 

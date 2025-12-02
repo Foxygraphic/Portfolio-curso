@@ -24,26 +24,27 @@ body {
 .sidebar .sidebar-logo {
   display: block;
   margin: 0 auto 20px auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .sidebar .sidebar-titulo {
   font-family: "poppins", sans-serif;
   color: #000000;
   text-align: center;
-  font-size: 36px;
+  font-size: 27px;
   margin-bottom: 5px;
   margin-top: 15px;
 }
 .sidebar .sidebar-subtitulo {
   font-family: "poppins", sans-serif;
   color: #494949;
+  font-size: 17px;
   font-style: italic;
   margin-bottom: 20px;
 }
 .sidebar .sidebar-descripcion {
   font-family: "poppins", sans-serif;
   color: #494949;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .navbar-desktop {
