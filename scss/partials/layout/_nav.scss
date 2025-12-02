@@ -7,13 +7,18 @@
 .navbar-desktop {
     @include mixins.flex(column, space-between, flex-start);
     padding-top: 30px;
+
+    .nav-item {
+        margin-bottom: 20px;
+    }
 }
 
 // NAV LINKS
 .nav-links {
     text-decoration: none;
-    color: variables.$color-fondo-principal;
+    color: variables.$color-texto-principal;
     font-weight: 600;
+
     &:hover {
             color: variables.$color-texto-resaltado;
         }

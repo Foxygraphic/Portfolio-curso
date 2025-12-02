@@ -11,8 +11,7 @@
 }
 
 .main-container {
-    @include mixins.flex(row, flex-start, center);
-    gap: 1.5rem;
+    display: flex;
     margin-bottom: 1rem;
 }
 
@@ -54,7 +53,7 @@
     text-align: center;
 
     img {
-        display: block;
+        display: flex;
         height: auto;
         margin: 0 auto;
         border-radius: 8px;

@@ -12,6 +12,8 @@
         text-align: center ;
     }
     .sidebar-logo {
+        display: block; 
+        margin: 0 auto 20px auto;
         margin-bottom:  20px;
     }
     .sidebar-titulo {
@@ -20,7 +22,7 @@
         text-align: center;
         font-size: 36px;     
         margin-bottom: 5px;
-        margin-top: 15 px;
+        margin-top: 15px;
     }
     .sidebar-subtitulo {
         font-family: variables.$font-stack;
