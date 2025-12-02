@@ -13,7 +13,7 @@
 } 
 
 // MOBILE
-@media (max-width: 767px) {/
+@media (max-width: 767px) {
     
     // SIDEBAR
     .sidebar-titulo {
@@ -33,12 +33,12 @@
     
         
     // MAIN
-    .main-image, .main-image img { // Atención: Usarás .main-image aquí
+    .main-image, .main-image img {
         max-width: 100%;
     }
 
     .main-container {
-        @include mix.flex(column, initial, initial); // Forzamos la columna
+        @include mixins.flex(column, initial, initial);
     }
     
     // SOBRE MI
