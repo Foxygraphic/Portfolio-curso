@@ -2,6 +2,11 @@
 @use "../utilities/variables";
 
 // MAIN
+
+.main-titulo-container {
+    @include mixins.flex(row, flex-between, center);    
+}
+
 .main-titulo {
     text-align: center;
     color: variables.$color-texto-resaltado;
@@ -74,5 +79,14 @@
     .mapa-lista {
         margin-left: 40px;
         margin-bottom: 20px;
+    }
+}
+
+// PROYECTO
+.proyecto-imagenes {
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 8px;
     }
 }
