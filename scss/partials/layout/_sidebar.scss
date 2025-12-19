@@ -5,8 +5,12 @@
 .sidebar {
     @include mixins.flex(column, flex-start, stretch);
     background-color: variables.$color-fondo-secundario;
-    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* o min-height */
     padding: 35px 20px;
+    }
+    
 
     .container-titulos {
         text-align: center ;
