@@ -2,26 +2,30 @@
 @use "../utilities/variables";
 
 // BOTONES
+.btn-base {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 15px 60px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
 .boton-vermas-container {
     @include mixins.flex(row, center, center);
     width: 100%;
+    }
 
     .boton-vermas {
-        display: inline-block;
-        text-decoration: none;
+        @extend .btn-base;
         background-color: transparent;
         color: variables.$color-texto-principal;
         border: 2px solid variables.$color-texto-principal;
-        border-radius: 40px;
-        padding: 15px 60px;
         margin: 30px 0px;
-        font-weight: 600;
 
         &:hover {
             background-color: variables.$color-primario;
             border-color: variables.$color-primario;
             color: variables.$color-fondo-principal;
-            transition: background-color 0.3s ease;
         }
     }
-}

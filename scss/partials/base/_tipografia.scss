@@ -9,3 +9,14 @@ body {
     color: variables.$color-texto-principal;
 }
 
+// HEADINGS
+h3 {
+    font-family: variables.$font-stack;
+    font-size: 22px;
+}
+
+h4 {
+    font-family: variables.$font-stack;
+    color: variables.$color-primario;
+    font-size: 15px;
+}
